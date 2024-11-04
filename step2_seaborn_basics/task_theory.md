@@ -22,11 +22,16 @@ import matplotlib.pyplot as plt
 
 
 ### First drawing
-**1. Creating the plot figure and axes**  
+**1. Setting the theme**  
   
-To create plot, we usually use the function ```plt.subplots()```.
+You can set the theme to the seaborn one, using ```sns.set_theme()```. This has to be done before creating an axes.  
+You can find more possibilities [here](https://seaborn.pydata.org/tutorial/aesthetics.html).
+
+**2. Creating the plot figure and axes**  
+  
+To create a plot, we usually use the function ```plt.subplots()```.
 This is a function from the Matplotlib library, that Seaborn is built on the top of.  
-```plt.subplots()``` gives us two objects: 
+```plt.subplots()``` gives us two objects that are both empty: 
    - ```fig``` - serves as a container for the plots
    - ```ax``` - represents the actual plot/s themselves
 
@@ -38,11 +43,6 @@ Default usage:
 If we want to put more axes into one figure, we can specify the arguements ```nrows: int, ncols: int```. The ax object then becomes a list, and we can access different axes in the figure using ```ax[0]``` etc.  
 
 If we want to specify the size of the figure, we can use the argument ```figsize: (float,float)``` to set the width and height in inches.
-
-**2. Setting the theme**  
-  
-You can set the theme to sns, using ```sns.set_theme()```.
-You can find more possibilities [here](https://seaborn.pydata.org/tutorial/aesthetics.html).
 
 **3. Creating a plot from a dataset**  
   

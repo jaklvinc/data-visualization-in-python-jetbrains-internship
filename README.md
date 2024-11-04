@@ -1,4 +1,7 @@
 # Seaborn Gaming Platforms Visualization Course
+This is a course, that will teach you the basics of Pandas and Seaborn for data analysis.
+In the end you will know how to create a simple graph from a provided dataset.
+
 
 ## Prerequisites
 - Python 3.9+
