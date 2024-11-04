@@ -23,7 +23,7 @@ def test_histogram_content():
 
     assert ax.get_title() == "Histogram", "First plot title should be 'Histogram'"
     assert ax.get_ylabel() == "Count", "Histogram y-axis label should be 'Count'"
-    assert ax.get_xlabel() == "Height", "Histogram x-axis label should be 'Height'"
+    assert ax.get_xlabel() == "Global Sales", "Histogram x-axis label should be 'Global Sales'"
 
 
 def test_scatter_plot_content():
@@ -32,8 +32,8 @@ def test_scatter_plot_content():
     ax = fig.get_axes()[1]
 
     assert ax.get_title() == "Scatter plot", "Second plot title should be 'Scatter plot'"
-    assert ax.get_ylabel() == "Weight", "Scatter plot y-axis label should be 'Weight'"
-    assert ax.get_xlabel() == "Height", "Scatter plot x-axis label should be 'Height'"
+    assert ax.get_ylabel() == "EU Sales", "Scatter plot y-axis label should be 'EU Sales'"
+    assert ax.get_xlabel() == "NA Sales", "Scatter plot x-axis label should be 'NA Sales'"
 
 
 def test_theme_applied():
