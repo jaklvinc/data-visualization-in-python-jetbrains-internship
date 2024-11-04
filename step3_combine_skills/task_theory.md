@@ -22,7 +22,8 @@ There are more possible arguments, but these are the main ones that you can play
 
 ## Task
 
-Create single bar chart showing the number of games per 4 specific gaming platforms (PS4, XOne, PC and WiiU) by game genre from the provided dataset.
+Create single bar chart showing the number of games per 4 specific gaming platforms (PS4, XOne, PC and WiiU) by game genre from the provided dataset.  
+Use the knowledge you have acquired from previous lessons.
 
 ### Requirements
 
