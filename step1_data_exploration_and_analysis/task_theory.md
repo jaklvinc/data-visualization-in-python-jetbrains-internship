@@ -28,7 +28,7 @@ To see how the data looks, we can use different commands:
 - ```df.head()``` - shows us first 5 entries, we can manipulate the number with an argument
 - ```df.info()``` - shows us basic information about the dataset
 - ```df.nunique()``` - shows us how many unique values each column has. This can be useful to determine which columns may be important.
-- ```df.unique["COLUMN_NAME"]``` - shows all unique values of column with COLUMN_NAME
+- ```df["COLUMN_NAME"].unique()``` - shows all unique values of column with COLUMN_NAME
 
 **3. Accessing data**  
 To access data in a certain column, we can use ```df[COLUMN_NAME]```.  
@@ -50,7 +50,7 @@ For example when we want to count how much each gender is represented in a datas
 ```python
 df.groupby('gender').count() 
 ```
-This will give us a table which shows how many entries there are for each gender in the dataset.
+This will give us a table which shows how many entries there are for each gender in the dataset. It also sets the gender as a new index.
 
 **5. Dropping data**
 
@@ -72,14 +72,15 @@ Create a simple Python script, that shows how you understand working with Pandas
 
 - Load the provided dataset in ```data/dataset.csv```
 - Print information about the dataset
-- Show unique genres and consoles and save those into variables
-- Create a new dataframe that contains the count of games for each platform
+- Save the 5th row into a variable
+- Print unique genres and consoles and save those into variables
+- Create a new dataframe using ```groupby()``` that contains the count of games for each platform
 
 ## Requirements
 - ```df``` variable stores the provided dataset
+- ```fifth_entry``` contains the 5th entry in the dataset
 - ```unique_genres``` and ```unique_consoles``` variables store specified unique values
-- ```new_df``` should contain 2 columns 
-  - ```platform``` with the name of the platform
+- ```new_df``` should contain 1 column apart from the index of genre names
   - ```count``` with the count of all games for certain platform
 
 
