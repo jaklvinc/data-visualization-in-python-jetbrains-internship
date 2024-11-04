@@ -28,20 +28,20 @@ To create plot, we usually use the function ```plt.subplots()```.
 This is a function from the Matplotlib library, that Seaborn is built on the top of.  
 ```plt.subplots()``` gives us two objects: 
    - ```fig``` - serves as a container for the plots
-   - ```axes``` - represents the actual plot/s themselves
+   - ```ax``` - represents the actual plot/s themselves
 
 Default usage:
 ```python
    fig, ax = plt.subplots()
 ```
 
-If we want to put more axes into one figure, we can specify the arguements ```nrows: int, ncols: int```.  
+If we want to put more axes into one figure, we can specify the arguements ```nrows: int, ncols: int```. The ax object then becomes a list, and we can access different axes in the figure using ```ax[0]``` etc.  
+
 If we want to specify the size of the figure, we can use the argument ```figsize: (float,float)``` to set the width and height in inches.
 
 **2. Setting the theme**  
   
-You can set the theme, using ```sns.set_theme()```.
-This can take parameters, but by default it sets the graph to a grey color with white gridlines.
+You can set the theme to sns, using ```sns.set_theme()```.
 You can find more possibilities [here](https://seaborn.pydata.org/tutorial/aesthetics.html).
 
 **3. Creating a plot from a dataset**  
@@ -56,9 +56,13 @@ For example, if we wanted to create a histogram with the distribution of height 
 sns.histplot(people, x='Height')
 ```
 
+If we want to specify what axes to plot to, we can set the ```ax``` argument.
+
 **4. Adding title and axis labels**
-- To add a title to the plot use ```plt.title()```
-- To add a label to each axis, use ```plt.xlabel()``` or ```plt.ylabel()```
+- To add a title to the axes use ```YOUR_AXES.title()```
+- To add a label to each axis, use ```YOUR_AXES.xlabel()``` or ```YOUR_AXES.ylabel()```
+
+You can do specify these on the whole figure.
 
 **5. Showing the plot**
 
@@ -70,4 +74,13 @@ If you wanted to save the plot to a file, you can use ```plt.savefig()```
 Create a simple seaborn Python script using the data provided in the template.
 
 1. Create a histogram of the distribution of heights in the dataset.
-2. 
+2. Create a [scatter plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html) of weight vs height.
+
+## Requirements
+- Use the dataset provided in the template
+- Both plots are in one figure, and different axes
+- Use the sns theme
+- First plot is named 'Histogram', second is named 'Scatter plot'
+- Axis names are:
+  - *Histogram*: ```x``` - 'Height', ```y``` - 'Count'
+  - *Scatter plot*: ```x``` - 'Height', ```y``` - 'Weight'
