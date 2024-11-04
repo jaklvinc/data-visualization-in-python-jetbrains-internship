@@ -71,16 +71,16 @@ If you wanted to save the plot to a file, you can use ```plt.savefig()```
 
 # Task
 
-Create a simple seaborn Python script using the data provided in the template.
+Create a simple seaborn Python script using the data provided.
 
-1. Create a histogram of the distribution of heights in the dataset.
-2. Create a [scatter plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html) of weight vs height.
+1. Create a histogram of the distribution of global sales.
+2. Create a [scatter plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html) of NA sales vs EU sales.
 
 ## Requirements
-- Use the dataset provided in the template
+- Use the dataset provided in ```data/dataset.csv```
 - Both plots are in one figure, and different axes
 - Use the sns theme
 - First plot is named 'Histogram', second is named 'Scatter plot'
 - Axis names are:
-  - *Histogram*: ```x``` - 'Height', ```y``` - 'Count'
-  - *Scatter plot*: ```x``` - 'Height', ```y``` - 'Weight'
+  - *Histogram*: ```x``` - 'Global Sales', ```y``` - 'Count'
+  - *Scatter plot*: ```x``` - 'NA Sales', ```y``` - 'EU Sales'
