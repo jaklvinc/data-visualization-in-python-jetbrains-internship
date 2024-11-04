@@ -14,7 +14,9 @@ In the end you will know how to create a simple graph from a provided dataset.
    pip install pandas seaborn matplotlib pytest
 
 ## Course structure
-/TODO
+1. Pandas basics
+2. Seaborn basics
+3. Adding the knowledge together
 
 ### Each step contains the following files:
 
