@@ -37,7 +37,7 @@ def test_new_df_structure():
 
     # Verify that new_df has the right columns and data types
     assert isinstance(new_df, pd.DataFrame), "'new_df' should be a pandas DataFrame."
-    assert set(new_df.columns) == {"count"}, "new_df should contain 'platform' and 'count' columns."
+    assert set(new_df.columns) == {"count"}, "new_df should contain 'count' column."
     assert pd.api.types.is_integer_dtype(new_df['count']), "The 'count' column should have integer type."
 
     # Verify that new_df counts are correct

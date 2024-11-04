@@ -10,7 +10,7 @@ df = pd.read_csv('../data/dataset.csv')
 
 #create your scatter plot here
 
-
+#sets the layout so everything is shown
 plt.tight_layout()
 
 if __name__ == '__main__':

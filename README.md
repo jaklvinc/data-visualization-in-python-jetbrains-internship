@@ -5,7 +5,7 @@ In the end you will know how to create a simple graph from a provided dataset.
 
 ## Prerequisites
 - Python 3.9+
-- Basic understanding of Python and the Pandas library
+- Basic understanding of Python
 
 ## Setup
 1. *(optional)* Create a virtual or Anaconda environment and switch to it
